@@ -1,0 +1,5 @@
+apps-$(CONFIG_APP_HELLOWORLD) += helloworld
+
+helloworld-y = common libsel4 libmuslc libsel4platsupport libsel4muslcsys
+
+helloworld: kernel_elf $(helloworld-y)

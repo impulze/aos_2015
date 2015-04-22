@@ -1,0 +1,6 @@
+config APP_HELLOWORLD
+    bool "Hello World example"
+    default y
+    depends on LIB_SEL4 && (LIB_MUSL_C || LIB_SEL4_C) && LIB_SEL4_PLAT_SUPPORT
+    help
+        My Hello World example application.
